@@ -16,14 +16,15 @@ breast_cancer['result'] = breast_cancer_dataset['target']
 # print(breast_cancer_dataset.keys())
 # print(breast_cancer_dataset['DESCR'])
 
-# In order to know what the target set represents
+# # In order to know what the target set represents
 # print(breast_cancer_dataset['target_names'])
 # output is -> ['malignant' 'benign'] showing that a 0=>malignant and 1=>benign
 
-# Bulding a Logistic Regression model
-# Can also instantiate X and y without .values  (.values changes the Dataframe to a numpy array
+# # Bulding a Logistic Regression model
+# # Can also instantiate X and y without .values  (.values changes the Dataframe to a numpy array)
 X = breast_cancer.values
 y = breast_cancer['result'].values
+
 '''
 model = LogisticRegression()
 model.fit(X, y)
